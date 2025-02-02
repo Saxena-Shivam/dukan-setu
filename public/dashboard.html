@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard - Dukaan Setu</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="dashboard.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">Dukaan Setu</div>
+        <ul>
+          <li><a href="dashboard.html">Dashboard</a></li>
+          <li><a href="catalog.html">Catalog</a></li>
+          <li><a href="orders.html">Orders</a></li>
+          <li><a href="analytics.html">Analytics</a></li>
+          <li><a href="profile.html">Profile</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="dashboard">
+      <h1>Welcome to Your Dashboard</h1>
+
+      <section class="store-overview">
+        <h2>Store Overview</h2>
+        <p>Store Link: <a href="#" id="storeLink">Loading...</a></p>
+        <p>Catalog Status: <span id="catalogStatus">Loading...</span></p>
+        <p>Recent Orders: <span id="recentOrders">Loading...</span></p>
+      </section>
+
+      <section class="quick-access">
+        <h2>Quick Access</h2>
+        <div class="tool-grid">
+          <a href="catalog.html" class="tool-card">
+            <h3>Product Catalog</h3>
+            <p>Manage your products</p>
+          </a>
+          <a href="analytics.html" class="tool-card">
+            <h3>Analytics</h3>
+            <p>View your store's performance</p>
+          </a>
+          <a href="support.html" class="tool-card">
+            <h3>Support</h3>
+            <p>Get help and resources</p>
+          </a>
+        </div>
+      </section>
+
+      <section class="notifications">
+        <h2>Notifications</h2>
+        <ul id="notificationList">
+          <li>Loading notifications...</li>
+        </ul>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Dukaan Setu. All rights reserved.</p>
+    </footer>
+
+    <script src="dashboard.js"></script>
+  </body>
+</html>

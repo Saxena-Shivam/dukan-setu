@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile - Dukaan Setu</title>
+    <link rel="stylesheet" href="ord-pro-ana.css" />
+  </head>
+  <body>
+    <div class="container">
+      <nav>
+        <ul class="navbar">
+          <li><a href="orders.html">Orders</a></li>
+          <li><a href="analytics.html">Analytics</a></li>
+          <li><a href="profile.html">Profile</a></li>
+        </ul>
+      </nav>
+
+      <h1>Your Profile</h1>
+      <div class="profile">
+        <div class="profile-info">
+          <h2>Personal Information</h2>
+          <form>
+            <label for="name">Name</label>
+            <input type="text" id="name" value="John Doe" disabled />
+
+            <label for="email">Email</label>
+            <input
+              type="email"
+              id="email"
+              value="johndoe@example.com"
+              disabled
+            />
+
+            <label for="mobile">Mobile Number</label>
+            <input type="tel" id="mobile" value="+1 234 567 890" disabled />
+
+            <button type="submit" class="btn">Update Profile</button>
+          </form>
+        </div>
+
+        <div class="password-change">
+          <h2>Change Password</h2>
+          <form>
+            <label for="current-password">Current Password</label>
+            <input type="password" id="current-password" required />
+
+            <label for="new-password">New Password</label>
+            <input type="password" id="new-password" required />
+
+            <label for="confirm-password">Confirm New Password</label>
+            <input type="password" id="confirm-password" required />
+
+            <button type="submit" class="btn">Change Password</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

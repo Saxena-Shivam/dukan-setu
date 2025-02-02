@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add/Edit Product - Dukaan Setu</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="catalog.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">Dukaan Setu</div>
+        <ul>
+          <li><a href="dashboard.html">Dashboard</a></li>
+          <li><a href="catalog.html">Catalog</a></li>
+          <li><a href="orders.html">Orders</a></li>
+          <li><a href="analytics.html">Analytics</a></li>
+          <li><a href="profile.html">Profile</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="catalog">
+      <h1 id="pageTitle">Add New Product</h1>
+      <form id="productForm">
+        <div class="form-group">
+          <label for="productName">Product Name</label>
+          <input type="text" id="productName" name="productName" required />
+        </div>
+
+        <div class="form-group">
+          <label for="productDescription">Product Description</label>
+          <textarea
+            id="productDescription"
+            name="productDescription"
+            required
+          ></textarea>
+        </div>
+
+        <div class="form-group">
+          <label for="productPrice">Price</label>
+          <input
+            type="number"
+            id="productPrice"
+            name="productPrice"
+            step="0.01"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="productCategory">Category</label>
+          <select id="productCategory" name="productCategory" required>
+            <option value="">Select a category</option>
+            <option value="groceries">Groceries</option>
+            <option value="electronics">Electronics</option>
+            <option value="fashion">Fashion</option>
+            <option value="home">Home & Living</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="productImage">Product Image</label>
+          <input
+            type="file"
+            id="productImage"
+            name="productImage"
+            accept="image/*"
+            required
+          />
+          <div id="imagePreview"></div>
+        </div>
+
+        <div class="form-group">
+          <label for="productInventory">Inventory Quantity</label>
+          <input
+            type="number"
+            id="productInventory"
+            name="productInventory"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="productSKU">SKU</label>
+          <input type="text" id="productSKU" name="productSKU" required />
+        </div>
+
+        <button type="submit">Save Product</button>
+      </form>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Dukaan Setu. All rights reserved.</p>
+    </footer>
+
+    <script src="add-edit-product.js"></script>
+  </body>
+</html>

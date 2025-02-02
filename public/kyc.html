@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KYC and Verification - Dukaan Setu</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="onboarding.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">Dukaan Setu</div>
+      </nav>
+    </header>
+
+    <main class="onboarding">
+      <h1>KYC and Verification</h1>
+      <form id="kycForm">
+        <div class="form-group">
+          <label for="gstCertificate">GST Certificate</label>
+          <input
+            type="file"
+            id="gstCertificate"
+            name="gstCertificate"
+            accept=".pdf,.jpg,.jpeg,.png"
+            required
+          />
+          <div id="gstPreview"></div>
+        </div>
+
+        <div class="form-group">
+          <label for="idProof">ID Proof</label>
+          <input
+            type="file"
+            id="idProof"
+            name="idProof"
+            accept=".pdf,.jpg,.jpeg,.png"
+            required
+          />
+          <div id="idPreview"></div>
+        </div>
+
+        <div class="form-group">
+          <label for="verificationStatus">Verification Status</label>
+          <input
+            type="text"
+            id="verificationStatus"
+            name="verificationStatus"
+            value="Pending"
+            readonly
+          />
+        </div>
+
+        <button type="submit">Submit for Verification</button>
+      </form>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Dukaan Setu. All rights reserved.</p>
+    </footer>
+
+    <script src="kyc.js"></script>
+  </body>
+</html>

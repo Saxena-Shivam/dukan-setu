@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Store Setup - Dukaan Setu</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="onboarding.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">Dukaan Setu</div>
+      </nav>
+    </header>
+
+    <main class="onboarding">
+      <h1>Set Up Your Store</h1>
+      <form id="storeSetupForm">
+        <div class="form-group">
+          <label for="storeName">Store Name</label>
+          <input type="text" id="storeName" name="storeName" required />
+        </div>
+
+        <div class="form-group">
+          <label for="storeAddress">Store Address</label>
+          <textarea id="storeAddress" name="storeAddress" required></textarea>
+        </div>
+
+        <div class="form-group">
+          <label for="storeDescription">Store Description</label>
+          <textarea
+            id="storeDescription"
+            name="storeDescription"
+            required
+          ></textarea>
+        </div>
+
+        <div class="form-group">
+          <label for="storeLogo">Store Logo</label>
+          <input type="file" id="storeLogo" name="storeLogo" accept="image/*" />
+        </div>
+
+        <div class="form-group">
+          <label for="storeBanner">Store Banner</label>
+          <input
+            type="file"
+            id="storeBanner"
+            name="storeBanner"
+            accept="image/*"
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="storeCategory">Store Category</label>
+          <select id="storeCategory" name="storeCategory" required>
+            <option value="">Select a category</option>
+            <option value="groceries">Groceries</option>
+            <option value="crafts">Crafts</option>
+            <option value="electronics">Electronics</option>
+            <option value="fashion">Fashion</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+
+        <button type="submit">Save and Continue</button>
+      </form>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Dukaan Setu. All rights reserved.</p>
+    </footer>
+
+    <script src="store-setup.js"></script>
+  </body>
+</html>
